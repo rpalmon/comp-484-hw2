@@ -6,16 +6,21 @@
 <link href="_css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<h1>Comp 484</h1>
-<h2>HTML Reference</h2>
-<ul>
-  <li><a href="index.html" title="Introduction to HTML">Introduction to HTML</a></li>
-  <li><a href="syntax.html" title="HTML syntax">HTML syntax</a></li>
-  <li><a href="structure.html" title="Structuring pages">Structuring pages</a></li>
-  <li><a href="links.html" title="Creating links">Creating links</a></li>
-  <li><a href="reference.html" title="HTML Reference">HTML reference</a></li>
-  <li><a href="next.html" title="Next steps">Next steps</a></li>
-</ul>
+<header role="banner">
+  <h1>Comp 484</h1>
+  <h2>HTML Reference</h2>
+  <nav role="navigation">
+    <ul>
+      <li><a href="index.html" title="Introduction to HTML">Introduction to HTML</a></li>
+      <li><a href="syntax.html" title="HTML syntax">HTML syntax</a></li>
+      <li><a href="structure.html" title="Structuring pages">Structuring pages</a></li>
+      <li><a href="links.html" title="Creating links">Creating links</a></li>
+      <li><a href="reference.html" title="HTML Reference">HTML reference</a></li>
+      <li><a href="next.html" title="Next steps">Next steps</a></li>
+    </ul>
+  </nav>
+</header>
+<main role="main">
 <p>On this page you&rsquo;ll find a quick reference to common HTML terms and a table of frequently used <a href="#named">named character entities</a>.</p>
 <h3>HTML Terms</h3>
 <dl>
@@ -157,6 +162,9 @@
     <td><b>&amp;mdash;</b></td>
   </tr>
 </table>
-<p><a href="http://www.csun.edu" title="csun.edu" target="_blank">CSUN</a> 18111 Nordhoff St Northridge, CA 91330</p>
+</main>
+<footer role="contentinfo">
+  <p><a href="http://www.csun.edu" title="csun.edu" target="_blank">CSUN</a> 18111 Nordhoff St Northridge, CA 91330</p>
+</footer>
 </body>
 </html>
