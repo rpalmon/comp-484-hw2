@@ -1,3 +1,54 @@
+<!-- 
+TASK: b. Open the structure.html file and explore the page structure and ARIA roles. Write out the document outline, and how structural tags like aside, article, nav, and section are being used.
+
+DOCUMENT OUTLINE:
+The page has a structure starting with "Comp 484" as the main heading (H1), followed by "Structuring Pages" as a secondary heading (H2). Under that are four main topics at the same level (H3): "Conveying meaning through structure", "Sectioning elements", "Document outlines", and "WAI-ARIA Roles". Within the "Document outlines" section, there is a W3C Warning box with a sub-heading (H4).
+
+STRUCTURAL TAGS AND HOW THEY ARE USED:
+
+Article Element:
+The article element wraps all the educational content about HTML structure. It contains everything from the introduction through the WAI-ARIA discussion. This tag shows the content is complete on its own.
+
+Section Elements:
+There are three section elements in this document. The first section talks about "Sectioning elements" and explains HTML5 structural tags. The second section covers "Document outlines" and explains the HTML outline algorithm. The third section discusses "WAI-ARIA Roles" and explains accessibility features. Each section represents a different topic within the article.
+
+Navigation Element:
+The nav element appears in the page header and contains a list of links to all the main pages on the site (Introduction to HTML, HTML syntax, Structuring pages, Creating links, HTML reference, and Next steps). This helps users move between different pages on the website.
+
+Aside Element:
+The aside element is inside the second section about document outlines. It contains a W3C warning that provides extra information about the HTML5 outline algorithm. This content adds to the main discussion but isn't required for understanding the main message. The aside has a heading and a quoted warning message.
+
+SEMANTIC ELEMENTS AND ARIA ROLES:
+
+Header with banner role - This identifies the top section of the page that contains the site title, page title, and navigation. Screen readers recognize this as the main header area.
+
+Navigation with navigation role - This landmark helps assistive technology users quickly find the navigation menu.
+
+Main with main role - This identifies the main content area of the page, making it easy for users to skip to the main content.
+
+Footer with contentinfo role - This identifies the footer area containing contact information and links.
+
+PAGE STRUCTURE OVERVIEW:
+The page starts with a header containing the site branding and navigation. Below that is the main content area with an article that has an intro header followed by three topic sections. One of those sections contains an aside element with extra information. At the bottom is a footer with contact and institutional information.
+
+
+
+SEMANTIC TAGS USAGE ANALYSIS:
+
+Header Element:
+The <header> element appears twice in this document:
+1. Page header (with role="banner") - Contains the site title "Comp 484", page title "Structuring Pages", and main navigation menu. This is the main header for the whole page and provides the same branding and navigation across the site.
+2. Article header - Contains the intro content for the article with the "Conveying meaning through structure" heading and explanation paragraph. This header introduces the article content.
+
+Main Element:
+The <main> element (with role="main") wraps the main content of the page. It contains the entire article about HTML structure and helps identify the main content area. This helps users with screen readers skip directly to the main content, going past navigation and other extra elements. There should only be one main element per page, and it contains the content that is directly related to what the page is about.
+
+Footer Element:
+The <footer> element (with role="contentinfo") appears at the bottom of the page and contains contact information and school details (CSUN address). This provides the same site-wide information and helps users find contact details and legal information.
+
+BENEFITS:
+These HTML elements create clear page sections that improve accessibility, allow for better CSS styling without needing class names, and help search engines understand the page structure. Using HTML5 elements with ARIA roles provides the best support for assistive technologies.
+
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
